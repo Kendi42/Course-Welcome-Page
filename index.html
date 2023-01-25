@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to APP4035</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        body{
+            font-family: 'Montserrat';
+        }
+        h1{
+        font-size: 5rem;
+        padding-right: 2em;
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+        font-weight: 600;
+        text-align: right;
+       }
+       h2{
+        text-align: center;
+        color: #816537;
+        font-size: 3rem;        
+
+       }
+       #outlinetext{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+       }
+       h3{
+        padding-right: 6em;
+        text-align: right;
+        padding-bottom: 0.6em;
+       }
+       .navbar-brand{
+        font-size: 1.8em;
+        font-weight: 600;
+       }
+       .myImage{
+        background-size: cover;
+        min-height: 80vh;
+        position:relative;
+        color:white;
+        text-shadow: 2px, 2px, 2px rgba(0,0,0,.2) green, blue, alpha
+       } 
+       .color-overlay{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.2);
+        display: flex;
+        flex-direction: column;
+        justify-content:right;
+       }
+       
+       .btn-outline-light:active, .btn-outline-light:hover  {
+        background-color: #ada17e !important;
+        }
+        .btn-outline-light{
+            margin: 0.3em;
+        }
+       .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding-right: 6em;
+        
+       }
+       #landing{
+        position: relative;
+        max-height: 100%;
+        max-width: 100%;
+       }
+       #cardContainer{
+        position: absolute;
+        top: 85%;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+       }
+       .card{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+
+       }
+       .card-img-top{
+        width: 5rem;
+        display: flex;
+        align-self: center;
+        padding-top: 1em;
+       }
+       .card-text{
+        text-align: center;
+       }
+
+       #courseoutline{
+        height:fit-content;
+        width: 100%;
+        margin-top: 15%;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3em;
+
+       }
+       
+       #accordionExample{
+        width: 60%;
+       }
+       
+
+ 
+
+    </style>
+</head>
+<body>
+    <div id="landing">
+
+        <div class="myImage"
+            style="background-image: url('./web.jpg');">
+            <div class="color-overlay">
+                <!-- Bootstrap NavBar Brand -->
+                <nav class="navbar navbar-dark">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#"> APP4035 </a>
+                    </div>
+                </nav>
+
+                <h1>WELCOME TO <br>APP4035</br></h1>
+                <h3>WEB APPLICATION <br>DEVELOPMENT FRAMEWORKS</br></h3>
+                <div class="container">
+                    <a href="#" class="btn btn btn-outline-light" role="button">Class Calendar</a>
+                    <a href="#courseoutline" class="btn btn btn-outline-light" role="button">Course Outline</a> 
+                </div>
+            </div>
+
+        </div>
+        <div id="cardContainer">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./museum.png">
+                <div class="card-body">
+                <p class="card-text"> Learn the architectural considerations when designing complex web apps</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./search.png">
+                <div class="card-body">
+                <p class="card-text">Identify the types of web apps that benefit from web frameworks</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./dev.png">
+                <div class="card-body">
+                <p class="card-text">Develop web apps using both front-end and back-end frameworks</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <div id="courseoutline">
+        <h2 id="outlinetext"> COURSE OUTLINE</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Week One
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Course Introduction</strong><br>
+                  <ul>
+                    <li>Course Overview</li>
+                    <li>The Nature of Today’s Web Applications</li>
+                    <li>The Nature of Today’s Web Developer</li>
+                  </ul>
+            
+
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Week Two
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Introduction to Web Frameworks</strong><br>
+                    <ul>
+                      <li>The Need for Web Frameworks</li>
+                      <li>Classification of Web Frameworks</li>
+                      <li>Selecting Suitable Frameworks</li>
+                    </ul>                
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Week Three
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Managing Application Complexity</strong><br>
+                    <ul>
+                      <li>Creating the Right User Experience</li>
+                      <li>Understanding the Technology Stack</li>
+                      <li>Emerging Alternative Technologies</li>
+                      <li>Maintenance & Quality Considerations</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Week Four
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Introduction to React
+                    </strong><br>
+                    <ul>
+                      <li>Getting Started with React</li>
+                      <li>Understanding React Basics</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Week Five
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Working with JSX
+                    </strong><br>
+                    <ul>
+                      <li>The Need for JSX</li>
+                      <li>Introduction to JSX</li>
+                      <li>Rendering Elements</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Week Six
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Components and State
+                    </strong><br>
+                    <ul>
+                      <li>Understanding Components</li>
+                      <li>Working with Properties</li>
+                      <li>Understanding State and Life-cycle</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Week Seven
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Mid-Semester Examination</strong>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Week Eight
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>State and React Hooks
+                    </strong><br>
+                    <ul>
+                      <li>Managing State</li>
+                      <li>React Hooks</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    Week Nine
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Handling Routing
+                    </strong><br>
+                    <ul>
+                      <li>Introduction to Routing</li>
+                      <li>Routing Challenges</li>
+                      <li>Routing Libraries</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Week Ten
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Events and Forms
+                    </strong><br>
+                    <ul>
+                      <li>Events in Web Frameworks</li>
+                      <li>Forms in Web Frameworks</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    Week Eleven
+                  </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Data and Conditional Rendering
+                    </strong><br>
+                    <ul>
+                      <li>Data and Components</li>
+                      <li>Conditional Rendering</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                    Week Twelve
+                  </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Data Collections & User Interfaces
+                    </strong><br>
+                    <ul>
+                      <li>Working with Collections</li>
+                      <li>Rendering Collections on the UI</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThirteen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                    Week Thirteen
+                  </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Product Deployment
+                    </strong><br>
+                    <ul>
+                      <li>The Development Environment</li>
+                      <li>The Production Environment</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFourteen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                    Week Fourteen
+                  </button>
+                </h2>
+                <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong style="text-align: center;">Final Examination</strong> 
+                  </div>
+                </div>
+            </div>
+
+
+            </div>
+
+            
+
+
+
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
