@@ -5,6 +5,9 @@ This is a webpage intended to welcome students of the APP4035 class. It gives th
 - HTML
 - CSS
 - Bootstrap
+- Node.js
+- Handlebars
+- Express
 
 # Application Screenshots
 ## Landing Page view
